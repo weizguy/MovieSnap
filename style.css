@@ -1,0 +1,201 @@
+body{
+    text-align: center;
+    background-image: url('assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+    background-color: black; 
+    font-size: 0px;
+    margin: 0px;
+    color: white;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+}
+aside div {
+	text-align: left;
+	width: 250px;
+	float: left;
+	color: white;
+}
+header{
+    color: white;
+    text-align: center;
+}
+h1 {
+    text-shadow: 2px 2px 8px #FF0000;
+}
+#divForMovieInfo {
+	padding-left: 20px;
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    width: 400px;
+    transform: skewY(20deg);
+
+}
+#divForQuote {
+    padding: 20px;
+    position: fixed;
+    width: 800px;
+    top: 660px;
+    left: 560px;
+    background-color: black;
+    border-color: white;
+    text-align: center;
+    border-radius: 25px;
+    opacity: .5;
+    visibility: hidden;
+
+}
+#divForLargeImage {
+    visibility: hidden;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 1080px;
+    width: 1920px;
+    z-index: 10;
+    background-color: #000000;
+    margin: auto;
+}
+#divForLargeImage img {
+    width: 100%;
+    height: auto;
+  cursor: pointer;
+}
+#divForImage{
+	margin-top: 0px;
+    position: fixed;
+    left: 470px;
+    top: 115px;
+}
+
+#divForImage img {
+	width: 980px;
+	height: 535px;
+  cursor: pointer;
+}
+
+#search {
+	padding: 12px;
+  color: #FFF;
+  vertical-align: middle;
+  width: 300px;
+  height: 30px;
+  text-align: left;
+  line-height: 30px;
+  font-size: 16px;
+  position: relative;
+  background-color: #000000;  
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 20%;
+  border-radius: 20%;
+  -webkit-box-shadow: inset 0 0 0 1px #ddd, inset 0 0 0 2px #fff,inset 0 0 0 2px #ddd;
+  box-shadow: inset 0 0 0 1px #ddd, inset 0 0 0 2px #fff,inset 0 0 0 2px #ddd;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+#artistName {
+    text-shadow: 2px 2px 8px #FF0000;
+}
+
+#divForTrailer{
+    position: fixed;
+    left: 470px;
+    top: 115px;
+    visibility: hidden;
+}
+#divForMusicPlayer{
+    position: fixed;
+    top: 100px;
+    left: 1500px;
+    padding: 20px;
+    width: 400px;
+    visibility: hidden;
+}
+#divForMusicPlayer img {
+    width: 150px;
+}
+div.tune {
+  vertical-align: middle;
+  display: block;
+}
+
+div.track {
+    font-size: 14px;
+    width: 300px;
+    height: 20px;
+    position: fixed;
+    left: 1600px;
+    text-align: left;
+    display: inline-block;
+  vertical-align: middle;
+  float: left;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+
+div.play {
+  color: #FFF;
+  vertical-align: middle;
+  display: inline-block;
+    position: fixed;
+    right: 160px;
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  cursor: pointer;
+  position: relative;
+  background-color: #000000;  
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 20%;
+  border-radius: 20%;
+  -webkit-box-shadow: inset 0 0 0 1px #ddd, inset 0 0 0 2px #fff,inset 0 0 0 2px #ddd;
+  box-shadow: inset 0 0 0 1px #ddd, inset 0 0 0 2px #fff,inset 0 0 0 2px #ddd;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+div.play:hover,
+div.play.active {
+  -webkit-box-shadow: inset 0 0 0 0 #CD391F, inset 0 0 0 0 #fff,inset 0 0 0 0px #cd3920;
+  -moz-box-shadow: inset 0 0 0 0 #CD391F, inset 0 0 0 0 #fff,inset 0 0 0 0px #cd3920;
+  box-shadow: inset 0 0 0 0 #CD391F, inset 0 0 0 0 #fff,inset 0 0 0 0px #cd3920;
+  color: #fff;
+  background-color: rgb(111,22,24);
+}
+
+
+button {
+  color: #FFF;
+  vertical-align: middle;
+    right: 160px;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: #000000;  
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 20%;
+  border-radius: 20%;
+  -webkit-box-shadow: inset 0 0 0 1px #ddd, inset 0 0 0 2px #fff,inset 0 0 0 2px #ddd;
+  box-shadow: inset 0 0 0 1px #ddd, inset 0 0 0 2px #fff,inset 0 0 0 2px #ddd;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+button:hover {
+  -webkit-box-shadow: inset 0 0 0 0 #CD391F, inset 0 0 0 0 #fff,inset 0 0 0 0px #cd3920;
+  -moz-box-shadow: inset 0 0 0 0 #CD391F, inset 0 0 0 0 #fff,inset 0 0 0 0px #cd3920;
+  box-shadow: inset 0 0 0 0 #CD391F, inset 0 0 0 0 #fff,inset 0 0 0 0px #cd3920;
+  color: #fff;
+  background-color: rgb(111,22,24);
+}

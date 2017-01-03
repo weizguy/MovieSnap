@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movies in a Snap!</title>
+    <link rel="stylesheet" href="mstyle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="http://www.youtube.com/player_api"></script>
+    <script src="mscript.js"></script>
+    <script type="text/javascript">  
+  if (screen.width > 800) {
+    window.location = "index.html";
+  }
+</script>
+</head>
+<body>
+<header>
+    <h4>Movies In a Snap!</h4>
+    
+</header>
+<aside>
+    <div id="divForQuote"></div>
+    <div id="divForMovieTitle"></div>
+    <div id="divForMovieInfo"></div>
+</aside>
+<main>
+    <div id=divForLargeImage></div>
+    <div id="divForImage"></div>
+    <div id="divForTrailer">
+        <iframe class="embedded-video-large" frameborder="0" allowfullscreen="1" title="YouTube video player" width="376" height="206" id="youTubeVid" frameborder="0" allowfullscreen="true" allowscriptaccess="always" style="width: 376px; height: 206px;"></iframe>
+    </div>
+    <div id="divForMusicPlayer">
+        <img id="musicImg"><br><br>
+        
+        <div class="tune"><audio id="music1"></audio><div class="play" id="play1">play</div></div>
+    
+    </div>
+</main>
+<footer>
+Search: <input class="" id="search" size="30" type="text">
+    <button class="" id="movieInfo">Get Movie Data</button>
+    <button class="" id="random">Random</button>
+    <button class="" id="vidBtn">Show Video</button>
+</footer>
+</body>
+</html>

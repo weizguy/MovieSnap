@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movies in a Snap!</title>
+    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="http://www.youtube.com/player_api"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript">  
+  if (screen.width <= 800) {
+    window.location = "mobile.html";
+  }
+</script>
+</head>
+<body>
+<header>
+    <h1 id="title">Movies in a Snap!</h1>
+    Search: <input class="" id="search" size="30" type="text">
+    <button class="" id="movieInfo">Get Movie Data</button>
+    <button class="" id="random">Random</button>
+    <button class="" id="vidBtn">Show Video</button>
+</header>
+<aside>
+    <div id="divForQuote">
+        
+    </div>
+    <div id="divForMovieInfo"></div>
+</aside>
+<main>
+    <div id=divForLargeImage></div>
+    <div id="divForImage"></div>
+    <div id="divForTrailer">
+        <iframe class="embedded-video-large" frameborder="0" allowfullscreen="1" title="YouTube video player" width="980" height="535" id="youTubeVid" frameborder="0" allowfullscreen="true" allowscriptaccess="always" style="width: 980px; height: 535px;"></iframe>
+    </div>
+    <div id="divForMusicPlayer">
+        <img id="musicImg">
+        <div id="artistName"></div><br>
+        
+        <div class="tune"><audio id="music1"></audio><div class="play" id="play1">play</div><div id="track1" class="track"></div></div>
+        <div class="tune"><audio id="music2"></audio><div class="play" id="play2">play</div><div id="track2" class="track"></div></div>
+        <div class="tune"><audio id="music3"></audio><div class="play" id="play3">play</div><div id="track3" class="track"></div></div>
+        <div class="tune"><audio id="music4"></audio><div class="play" id="play4">play</div><div id="track4" class="track"></div></div>
+        <div class="tune"><audio id="music5"></audio><div class="play" id="play5">play</div><div id="track5" class="track"></div></div>
+        <div class="tune"><audio id="music6"></audio><div class="play" id="play6">play</div><div id="track6" class="track"></div></div>
+        <div class="tune"><audio id="music7"></audio><div class="play" id="play7">play</div><div id="track7" class="track"></div></div>
+        <div class="tune"><audio id="music8"></audio><div class="play" id="play8">play</div><div id="track8" class="track"></div></div>
+        <div class="tune"><audio id="music9"></audio><div class="play" id="play9">play</div><div id="track9" class="track"></div></div>
+        <div class="tune"><audio id="music10"></audio><div class="play" id="play10">play</div><div id="track10" class="track"></div></div>
+    
+    </div>
+</main>
+</body>
+</html>
