@@ -12,6 +12,7 @@
  */
 $(document).ready(function () {
     addClickHandlers();
+    $('#vidBtn').css('visibility', 'hidden');
     
 });
 
@@ -20,8 +21,7 @@ function toggleIt() {
     var id = $this.attr('id').replace(/play/, '');
     $this.toggleClass('active');
     if($this.hasClass('active')){
-        $this.text('pause'); 
-        console.log("button clicked id is: ", $this.attr('id'));
+        $this.text('pause');
         var textShadow = "#track" + id;
         $(textShadow).css('text-shadow', '2px 2px 8px #FF0000');
         var player = '#music' + id;
@@ -199,10 +199,16 @@ function playVideo() {
 function movieSearch() {
     $("#divForImage").empty();
     $("#divForQuote").empty();
+    $('#vidBtn').css('visibility', 'visible');
     $('#vidBtn').text('Show Video');
     $('#vidBtn').removeClass('active');
     $('#divForTrailer').css('visibility', 'hidden');
     $('#divForMusicPlayer').css('visibility', 'visible');
+    for(var i = 1; i <= 10; i++) {
+        $('#play'+i).removeClass('active');
+        $('#play'+i).text('play');
+        $('#track'+i).css('text-shadow', '');
+    }
     var search = $('#search').val();
     if(search != ''){
         makeTmdbAjaxCall(search);
